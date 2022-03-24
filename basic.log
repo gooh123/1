@@ -1,0 +1,1385 @@
+INFO:root:Страница Магазина
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2022 15:06:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2022 15:06:24] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:root:Выполняется поиск
+ERROR:main:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 22, in search_page
+    posts = posts_handler.search_posts_for_substring(s)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\utils.py", line 29, in search_posts_for_substring
+    if substring_lower in post["content"].lower():
+AttributeError: 'int' object has no attribute 'lower'
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2022 15:06:28] "[35m[1mGET /search?s=кот HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:28:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:28:30] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:28:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:28:36] "GET /search?s=кот HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:28:36] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:28:40] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:48:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:48:36] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:49:00] "GET /search?s=кот HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:49:00] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:49:06] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:49:56] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:56:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:56:40] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 17:56:41] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 19:58:26] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 19:58:29] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:00:58] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:04:03] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:04:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:04:33] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:04:36] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:06:05] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:42:35] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:42:41] "[33mGET /add HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:42:49] "[33mGET /add/ HTTP/1.1[0m" 404 -
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:42:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:42:54] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:49:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:49:29] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:49:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Mar/2022 20:49:30] "[33mGET /post_form.html HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for(main_blueprint.add_page) }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'main_blueprint' is undefined
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:53:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:53:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for(main_blueprint.add_page) }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'main_blueprint' is undefined
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:54:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:54:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for(main_blueprint.add_page) }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'main_blueprint' is undefined
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:54:19] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for(main_blueprint.add_page) }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'main_blueprint' is undefined
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:54:21] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for(main_blueprint.add_page) }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'main_blueprint' is undefined
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:54:22] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for(main_blueprint.add_page) }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'main_blueprint' is undefined
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:55:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for(main_blueprint.add_page) }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'main_blueprint' is undefined
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:55:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for(main_blueprint.add_page) }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'main_blueprint' is undefined
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:55:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for(main_blueprint.add_page) }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'main_blueprint' is undefined
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:56:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:56:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 140-027-148
+INFO:werkzeug: * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:57:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:57:12] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:57:21] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 01:57:21] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 140-027-148
+INFO:werkzeug: * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:31:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:31:21] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:31:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:31:22] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:31:22] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:31:23] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:31:23] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:31:24] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:31:24] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:32:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:32:16] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:32:18] "GET /search?s=кот HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:32:18] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:32:23] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:32:23] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:37:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:37:17] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:37:23] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:37:23] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:56:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:56:54] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:56:55] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:56:55] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:56:57] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:56:57] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:56:58] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:56:58] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:58:50] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:58:50] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:58:51] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:58:51] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:58:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:58:54] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:58:55] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:58:55] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:59:30] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:59:30] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:59:31] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 17:59:31] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:00:35] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:00:35] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:00:48] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:00:48] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\loader\views.py", line 15, in create_new_post_page
+    return render_template("post_form.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: post_form.html
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:01:22] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\loader\views.py", line 15, in create_new_post_page
+    return render_template("post_form.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: post_form.html
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:01:55] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1538, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'main_blueprint.post_page' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:04:14] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 30, in post_page
+    render_template("post_form.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: post_form.html
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:04:40] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 30, in post_page
+    render_template("post_form.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: post_form.html
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:04:43] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('main_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main_blueprint.add_page'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:04:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('main_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main_blueprint.add_page'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:04:46] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('main_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main_blueprint.add_page'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:05:17] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('main_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main_blueprint.add_page'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:05:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('main_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main_blueprint.add_page'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:05:21] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('main_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main_blueprint.add_page'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:06:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('main_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main_blueprint.add_page'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:07:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('main_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main_blueprint.add_page'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:08:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('main_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main_blueprint.add_page'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:08:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('main_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main_blueprint.add_page'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:09:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:49:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:49:19] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1538, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'main_blueprint.add_page' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 18:49:20] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1538, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'main_blueprint.add_page' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:15:21] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1538, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'main_blueprint.add_page' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:15:33] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1538, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'main_blueprint.add_page' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:15:35] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:16:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:16:49] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1538, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'main_blueprint.add_page' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:16:58] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:17:26] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:17:26] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:17:53] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:17:53] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:17:55] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:17:55] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:19:45] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:19:45] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:19:46] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:19:46] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:20:56] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:20:56] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:21:16] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:21:16] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:21:35] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:21:35] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:43] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:43] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:44] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:44] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:44] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:44] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:44] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:44] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:45] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:45] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:45] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:45] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:45] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:45] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:46] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:46] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:46] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:46] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:47] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:47] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:47] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:47] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:48] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:27:48] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:28:14] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:28:14] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:28:32] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:28:32] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\loader\views.py", line 15, in create_new_post_page
+    return render_template("post_form.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: post_form.html
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:30:20] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\loader\views.py", line 15, in create_new_post_page
+    return render_template("post_form.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: post_form.html
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:30:25] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('main_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main_blueprint.add_page'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:32:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('main_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main_blueprint.add_page'. Did you mean 'main_blueprint.main_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:32:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('loader_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'loader_blueprint.add_page'. Did you mean 'loader_blueprint.create_new_post_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:36:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('loader_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'loader_blueprint.add_page'. Did you mean 'loader_blueprint.create_new_post_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:36:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('loader_blueprint.add_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'loader_blueprint.add_page'. Did you mean 'loader_blueprint.create_new_post_page' instead?
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:36:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:36:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:36:41] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\loader\views.py", line 15, in create_new_post_page
+    return render_template("post_form.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: post_form.html
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:36:42] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\loader\views.py", line 15, in create_new_post_page
+    return render_template("post_form.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: post_form.html
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:48:38] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\loader\templates\views.py", line 15, in create_new_post_page
+    return render_template("post_form.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: post_form.html
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:49:45] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+ERROR:pusk:Exception on /add [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\loader\templates\views.py", line 15, in create_new_post_page
+    return render_template("post_form.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: post_form.html
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2022 20:49:46] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('loader_blueprint.loader/views.create_new_post_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'loader_blueprint.loader/views.create_new_post_page'. Did you mean 'loader_blueprint.create_new_post_page' instead?
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:05:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:05:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:запрошена главная страничка
+ERROR:pusk:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\views.py", line 13, in main_page
+    return render_template("index.html")
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\main\templates\index.html", line 22, in top-level template code
+    <a href="{{ url_for('loader_blueprint.loader/views.create_new_post_page') }}" class="button">Добавить пост</a>
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\wseqasyy\PycharmProjects\pythonProject5\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'loader_blueprint.loader/views.create_new_post_page'. Did you mean 'loader_blueprint.create_new_post_page' instead?
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:05:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 140-027-148
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:06:38] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:06:38] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:06:38] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:06:38] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:06:38] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:06:38] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 140-027-148
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:запрошена главная страничка
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:08:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:08:14] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:08:21] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:08:21] "GET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:08:21] "GET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:08:21] "GET /add?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:08:21] "GET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:08:21] "GET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 140-027-148
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:10:17] "GET /add HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:10:17] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:10:40] "[33mPOST /post HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:10:40] "[33mPOST /post HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2022 02:10:40] "[33mPOST /post HTTP/1.1[0m" 404 -
